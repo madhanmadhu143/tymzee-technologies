@@ -59,4 +59,12 @@ footer {
   max-width: 220px;
   margin-bottom: 20px;
 }
+section ul, section ol {
+  padding-left: 20px;
+}
+
+section h3 {
+  margin-top: 20px;
+  color: #0a2540;
+}
 
