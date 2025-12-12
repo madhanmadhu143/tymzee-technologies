@@ -1,70 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f4f6f8;
-  color: #333;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #ffffff;
+  color: #1f2937;
+  line-height: 1.6;
 }
 
-.hero {
-  background: linear-gradient(135deg, #0a2540, #1e3a8a);
-  color: white;
-  padding: 80px 20px;
-  text-align: center;
+/* HEADER */
+.site-header {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 20px 40px;
 }
 
-nav {
-  background: white;
-  padding: 12px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #0a2540;
-  font-weight: bold;
-}
-
-section {
-  max-width: 900px;
+.header-inner {
+  max-width: 1200px;
   margin: auto;
-  padding: 40px 20px;
-}
-
-.service {
-  background: white;
-  padding: 20px;
-  margin: 15px 0;
-  border-left: 4px solid #2563eb;
-}
-
-#why ul {
-  list-style: none;
-  padding: 0;
-}
-
-#why li {
-  padding: 8px 0;
-}
-
-footer {
-  background: #0a2540;
-  color: white;
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .logo {
   max-width: 220px;
-  margin-bottom: 20px;
+  height: auto;
 }
-section ul, section ol {
-  padding-left: 20px;
+
+.header-text h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.header-text p {
+  margin: 5px 0 0;
+  color: #4b5563;
+}
+
+/* NAV */
+nav {
+  background: #0f172a;
+  padding: 12px 0;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* SECTIONS */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 40px;
+}
+
+section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
 }
 
 section h3 {
-  margin-top: 20px;
-  color: #0a2540;
+  margin-top: 30px;
+  font-size: 20px;
 }
 
+/* SERVICES BLOCK */
+.service {
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* FOOTER */
+footer {
+  background: #0f172a;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px 12px;
+  }
+}
