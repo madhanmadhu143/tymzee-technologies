@@ -20,24 +20,16 @@ body {
   background-attachment: fixed;
 }
 
-/* TYPOGRAPHY HIERARCHY */
+/* TYPOGRAPHY */
 h1, h2, h3 {
   font-weight: 600;
   letter-spacing: -0.02em;
   color: #0f172a;
 }
 
-h1 {
-  font-size: 34px;
-}
-
-h2 {
-  font-size: 26px;
-}
-
-h3 {
-  font-size: 20px;
-}
+h1 { font-size: 34px; }
+h2 { font-size: 26px; }
+h3 { font-size: 20px; }
 
 /* HEADER */
 .site-header {
@@ -60,37 +52,64 @@ h3 {
 
 .logo {
   max-width: 220px;
-  height: auto;
 }
 
 .header-text h1 {
-  margin: 0;
   color: #ffffff;
 }
 
 .header-text p {
   margin-top: 6px;
   color: rgba(255, 255, 255, 0.9);
-  font-weight: 400;
 }
 
-/* NAVIGATION */
+/* ========================= */
+/* NAVIGATION – BUTTON STYLE */
+/* ========================= */
 nav {
-  background: #0f172a;
+  background: linear-gradient(135deg, #020617, #0f172a);
   padding: 14px 0;
   text-align: center;
 }
 
 nav a {
-  color: #ffffff;
-  margin: 0 18px;
+  display: inline-block;
+  padding: 10px 22px;
+  margin: 0 10px;
+
+  color: #e5e7eb;
   text-decoration: none;
   font-weight: 500;
   font-size: 15px;
+
+  border-radius: 12px;
+  transition:
+    background 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.2s ease,
+    color 0.25s ease;
 }
 
+/* Hover = button box */
 nav a:hover {
-  text-decoration: underline;
+  background: linear-gradient(
+    135deg,
+    #22c55e 0%,
+    #06b6d4 40%,
+    #3b82f6 70%,
+    #8b5cf6 100%
+  );
+
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(59, 130, 246, 0.45);
+}
+
+/* Active page (add class manually) */
+nav a.active {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  color: #ffffff;
+  box-shadow: 0 8px 22px rgba(79, 70, 229, 0.45);
 }
 
 /* SECTIONS */
@@ -108,7 +127,6 @@ section {
 
 section p,
 section li {
-  font-weight: 400;
   color: #334155;
 }
 
@@ -118,10 +136,9 @@ section ol {
   padding-left: 22px;
 }
 
-/* CLIENT SCROLL SECTION */
+/* CLIENT SCROLL */
 .client-marquee {
   overflow: hidden;
-  width: 100%;
   margin-top: 24px;
 }
 
@@ -147,7 +164,6 @@ section ol {
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
-  white-space: nowrap;
 
   box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -158,17 +174,11 @@ section ol {
   box-shadow: 0 14px 32px rgba(59, 130, 246, 0.45);
 }
 
-/* SCROLL ANIMATION */
 @keyframes scrollClients {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
-/* PAUSE ON HOVER */
 .client-marquee:hover .client-track {
   animation-play-state: paused;
 }
@@ -188,28 +198,14 @@ footer p {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
   }
 
-  .header-text h1 {
-    font-size: 26px;
-  }
-
-  .header-text p {
-    font-size: 14px;
-  }
-
-  nav {
-    padding: 12px 0;
-  }
-
   nav a {
-    display: inline-block;
-    margin: 8px 10px;
+    margin: 8px 6px;
     font-size: 14px;
   }
 
@@ -218,27 +214,7 @@ footer p {
     padding: 24px 20px;
   }
 
-  h1 {
-    font-size: 28px;
-  }
-
-  h2 {
-    font-size: 22px;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
-
-  .client-track span {
-    padding: 10px 18px;
-    font-size: 13px;
-    margin: 0 10px;
-  }
-
-  footer {
-    font-size: 13px;
-    padding: 20px 16px;
-  }
+  h1 { font-size: 28px; }
+  h2 { font-size: 22px; }
+  h3 { font-size: 18px; }
 }
-
