@@ -188,6 +188,57 @@ footer p {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+
   .header-inner {
     flex-direction: column;
-    alig
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .header-text h1 {
+    font-size: 26px;
+  }
+
+  .header-text p {
+    font-size: 14px;
+  }
+
+  nav {
+    padding: 12px 0;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px 10px;
+    font-size: 14px;
+  }
+
+  section {
+    margin: 20px 16px;
+    padding: 24px 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .client-track span {
+    padding: 10px 18px;
+    font-size: 13px;
+    margin: 0 10px;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 20px 16px;
+  }
+}
+
