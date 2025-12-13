@@ -112,3 +112,35 @@ footer {
     margin: 8px 12px;
   }
 }
+/* CLIENT SCROLL SECTION */
+.client-marquee {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.client-track {
+  display: flex;
+  width: fit-content;
+  animation: scrollClients 28s linear infinite;
+}
+
+.client-track span {
+  background: #ffffff;
+  color: #0f172a;
+  padding: 14px 26px;
+  margin: 0 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+@keyframes scrollClients {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
