@@ -1,28 +1,30 @@
 /* RESET */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* BODY – BACKGROUND THEME */
 body {
-  margin: 0;
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #042f2e;
+  color: #0f172a;
   line-height: 1.65;
 
   background: linear-gradient(
     135deg,
-    #ccfbf1 0%,
-    #99f6e4 45%,
-    #67e8f9 100%
+    #99f6e4 0%,
+    #67e8f9 50%,
+    #38bdf8 100%
   );
   background-attachment: fixed;
 }
 
-/* HEADINGS – TYPOGRAPHY HIERARCHY */
+/* TYPOGRAPHY HIERARCHY */
 h1, h2, h3 {
   font-weight: 600;
   letter-spacing: -0.02em;
+  color: #0f172a;
 }
 
 h1 {
@@ -38,9 +40,19 @@ h3 {
 }
 
 /* HEADER */
+.site-header {
+  background: linear-gradient(
+    135deg,
+    #0f766e 0%,
+    #0891b2 60%,
+    #22d3ee 100%
+  );
+}
+
 .header-inner {
   max-width: 1200px;
   margin: auto;
+  padding: 28px 24px;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -53,26 +65,28 @@ h3 {
 
 .header-text h1 {
   margin: 0;
+  color: #ffffff;
 }
 
 .header-text p {
-  margin: 6px 0 0;
-  color: #475569;
+  margin-top: 6px;
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 400;
 }
 
-/* NAV */
+/* NAVIGATION */
 nav {
   background: #0f172a;
-  padding: 12px 0;
+  padding: 14px 0;
   text-align: center;
 }
 
 nav a {
   color: #ffffff;
-  margin: 0 20px;
+  margin: 0 18px;
   text-decoration: none;
   font-weight: 500;
+  font-size: 15px;
 }
 
 nav a:hover {
@@ -82,64 +96,51 @@ nav a:hover {
 /* SECTIONS */
 section {
   max-width: 1100px;
-  margin: 24px auto;
-  padding: 32px 36px;
+  margin: 28px auto;
+  padding: 36px 40px;
 
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(6px);
 
-  border-radius: 12px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
 }
 
 section p,
 section li {
   font-weight: 400;
+  color: #334155;
 }
 
 section ul,
 section ol {
-  margin: 12px 0;
-  padding-left: 20px;
-}
-
-/* FOOTER */
-footer {
-  background: #0f172a;
-  color: #ffffff;
-  text-align: center;
-  padding: 24px 20px;
-  font-size: 14px;
-}
-
-footer p {
-  margin: 0;
-  line-height: 1.4;
+  margin-top: 12px;
+  padding-left: 22px;
 }
 
 /* CLIENT SCROLL SECTION */
 .client-marquee {
   overflow: hidden;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .client-track {
   display: flex;
   width: max-content;
-  animation: scrollClients 45s linear infinite;
+  animation: scrollClients 55s linear infinite;
 }
 
 .client-track span {
-  display: inline-block;
-  padding: 12px 22px;
-  margin: 0 16px;
+  padding: 12px 24px;
+  margin: 0 14px;
   border-radius: 999px;
 
   background: linear-gradient(
     135deg,
     #22c55e 0%,
-    #06b6d4 35%,
-    #3b82f6 65%,
+    #06b6d4 40%,
+    #3b82f6 70%,
     #8b5cf6 100%
   );
 
@@ -148,13 +149,13 @@ footer p {
   font-weight: 500;
   white-space: nowrap;
 
-  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.35);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .client-track span:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.45);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(59, 130, 246, 0.45);
 }
 
 /* SCROLL ANIMATION */
@@ -172,15 +173,21 @@ footer p {
   animation-play-state: paused;
 }
 
+/* FOOTER */
+footer {
+  background: #0f172a;
+  color: #ffffff;
+  text-align: center;
+  padding: 26px 20px;
+  font-size: 14px;
+}
+
+footer p {
+  line-height: 1.5;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .header-inner {
     flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 8px 12px;
-  }
-}
+    alig
