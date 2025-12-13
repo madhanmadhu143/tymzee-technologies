@@ -57,4 +57,130 @@ h3 {
 
 .header-text p {
   margin: 6px 0 0;
-  color: #47556
+  color: #475569;
+  font-weight: 400;
+}
+
+/* NAV */
+nav {
+  background: #0f172a;
+  padding: 12px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* SECTIONS */
+section {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 32px 36px;
+
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+
+  border-radius: 12px;
+}
+
+section p,
+section li {
+  font-weight: 400;
+}
+
+section ul,
+section ol {
+  margin: 12px 0;
+  padding-left: 20px;
+}
+
+/* FOOTER */
+footer {
+  background: #0f172a;
+  color: #ffffff;
+  text-align: center;
+  padding: 24px 20px;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* CLIENT SCROLL SECTION */
+.client-marquee {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.client-track {
+  display: flex;
+  width: max-content;
+  animation: scrollClients 45s linear infinite;
+}
+
+.client-track span {
+  display: inline-block;
+  padding: 12px 22px;
+  margin: 0 16px;
+  border-radius: 999px;
+
+  background: linear-gradient(
+    135deg,
+    #22c55e 0%,
+    #06b6d4 35%,
+    #3b82f6 65%,
+    #8b5cf6 100%
+  );
+
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.client-track span:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.45);
+}
+
+/* SCROLL ANIMATION */
+@keyframes scrollClients {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* PAUSE ON HOVER */
+.client-marquee:hover .client-track {
+  animation-play-state: paused;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px 12px;
+  }
+}
