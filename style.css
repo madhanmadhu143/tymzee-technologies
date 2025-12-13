@@ -117,9 +117,8 @@ footer {
 .client-track {
   display: flex;
   width: max-content;
-  animation: scrollClients 30s linear infinite;
+  animation: scrollClients 45s linear infinite;
 }
-
 .client-track span {
   display: inline-block;
   padding: 12px 22px;
@@ -138,8 +137,9 @@ footer {
 
 .client-track span:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.45);
 }
+
 
 /* SCROLL ANIMATION */
 @keyframes scrollClients {
