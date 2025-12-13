@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-/* BODY – BACKGROUND THEME */
+/* BODY */
 body {
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #0f172a;
@@ -24,7 +24,6 @@ body {
 h1, h2, h3 {
   font-weight: 600;
   letter-spacing: -0.02em;
-  color: #0f172a;
 }
 
 h1 { font-size: 34px; }
@@ -60,12 +59,10 @@ h3 { font-size: 20px; }
 
 .header-text p {
   margin-top: 6px;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255,255,255,0.9);
 }
 
-/* ========================= */
-/* NAVIGATION – BUTTON STYLE */
-/* ========================= */
+/* NAVIGATION – BUTTONS */
 nav {
   background: linear-gradient(135deg, #020617, #0f172a);
   padding: 14px 0;
@@ -82,15 +79,10 @@ nav a {
   font-weight: 500;
   font-size: 15px;
 
-  border-radius: 12px;
-  transition:
-    background 0.25s ease,
-    box-shadow 0.25s ease,
-    transform 0.2s ease,
-    color 0.25s ease;
+  border-radius: 14px;
+  transition: all 0.25s ease;
 }
 
-/* Hover = button box */
 nav a:hover {
   background: linear-gradient(
     135deg,
@@ -99,17 +91,14 @@ nav a:hover {
     #3b82f6 70%,
     #8b5cf6 100%
   );
-
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 10px 26px rgba(59, 130, 246, 0.45);
+  box-shadow: 0 10px 26px rgba(59,130,246,0.45);
 }
 
-/* Active page (add class manually) */
 nav a.active {
   background: linear-gradient(135deg, #2563eb, #4f46e5);
   color: #ffffff;
-  box-shadow: 0 8px 22px rgba(79, 70, 229, 0.45);
 }
 
 /* SECTIONS */
@@ -118,11 +107,11 @@ section {
   margin: 28px auto;
   padding: 36px 40px;
 
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255,255,255,0.92);
   backdrop-filter: blur(6px);
-
   border-radius: 14px;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+
+  box-shadow: 0 20px 40px rgba(15,23,42,0.12);
 }
 
 section p,
@@ -136,16 +125,17 @@ section ol {
   padding-left: 22px;
 }
 
-/* CLIENT SCROLL */
+/* CLIENT SCROLL – FIXED */
 .client-marquee {
+  width: 100%;
   overflow: hidden;
-  margin-top: 24px;
+  margin-top: 28px;
 }
 
 .client-track {
   display: flex;
   width: max-content;
-  animation: scrollClients 55s linear infinite;
+  animation: scrollClients 30s linear infinite;
 }
 
 .client-track span {
@@ -164,23 +154,21 @@ section ol {
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
+  white-space: nowrap;
 
-  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 8px 20px rgba(59,130,246,0.35);
+  transition: transform 0.25s ease;
 }
 
 .client-track span:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 32px rgba(59, 130, 246, 0.45);
 }
 
+/* SCROLL ANIMATION */
 @keyframes scrollClients {
+arring {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
-}
-
-.client-marquee:hover .client-track {
-  animation-play-state: paused;
 }
 
 /* FOOTER */
@@ -198,6 +186,7 @@ footer p {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
