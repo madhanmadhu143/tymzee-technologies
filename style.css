@@ -110,6 +110,11 @@ footer {
   padding: 30px 20px;
   font-size: 14px;
 }
+footer p {
+  margin: 0;
+  line-height: 1.4;
+}
+
 
 /* CLIENT SCROLL SECTION */
 .client-marquee {
