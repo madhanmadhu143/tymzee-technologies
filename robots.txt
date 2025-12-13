@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://madhanmadhu143.github.io/tymzee-technologies/sitemap.xml
