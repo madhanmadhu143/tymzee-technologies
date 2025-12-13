@@ -125,14 +125,20 @@ footer {
   margin: 0 16px;
   border-radius: 999px;
 
-  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  background: linear-gradient(
+    135deg,
+    #22c55e 0%,
+    #06b6d4 35%,
+    #3b82f6 65%,
+    #8b5cf6 100%
+  );
+
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
   white-space: nowrap;
 
-  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.35);
 }
 
 .client-track span:hover {
