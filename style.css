@@ -119,11 +119,28 @@ footer {
   margin-top: 20px;
 }
 
-.client-track {
-  display: flex;
-  width: fit-content;
-  animation: scrollClients 28s linear infinite;
+.client-track span {
+  display: inline-block;
+  padding: 12px 22px;
+  margin: 0 14px;
+  border-radius: 999px; /* pill shape */
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #4f46e5
+  );
+
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 
 .client-track span {
   background: #ffffff;
