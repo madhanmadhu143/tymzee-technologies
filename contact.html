@@ -6,8 +6,8 @@
 
   <title>Contact TymZee Technologies | Business Technology Partner</title>
 
-  <meta name="description" content="Contact TymZee Technologies to discuss e-commerce enablement, business automation, CCTV solutions, IoT monitoring, and IT support for growing businesses.">
-  <meta name="keywords" content="contact TymZee Technologies, business technology partner, ecommerce enablement, automation services, CCTV solutions">
+  <meta name="description" content="Contact TymZee Technologies for website development, software systems, automation, and IT infrastructure solutions.">
+  <meta name="keywords" content="contact TymZee Technologies, website development contact, business automation, IT services">
   <meta name="author" content="TymZee Technologies">
   <meta name="robots" content="index, follow">
 
@@ -26,7 +26,7 @@
     <img src="assets/logo.png" alt="TymZee Technologies logo" class="logo">
     <div class="header-text">
       <h1>Contact TymZee Technologies</h1>
-      <p>Discuss your business challenges with a technology partner</p>
+      <p>Website, software, and system requirements</p>
     </div>
   </div>
 </header>
@@ -40,53 +40,27 @@
 
 <section>
   <h2>Start the Conversation</h2>
-
   <p>
-    If your business is facing operational challenges, planning to adopt digital
-    systems, or looking to improve efficiency through technology, we can help.
+    Describe your requirement clearly. Responses are typically sent within one
+    business day.
   </p>
-
-  <p>
-    Our role is to understand how your business works today and recommend
-    practical, scalable solutions aligned with real operational needs.
-  </p>
-
-  <div class="cta-buttons">
-  <a href="#message" class="btn btn-primary">Send a Message</a>
-  <a href="mailto:contact@tymzee.com" class="btn btn-outline">Email Us Directly</a>
-</div>
-
 </section>
 
 <section id="message">
-  <h2>Tell Us About Your Requirement</h2>
+  <h2>Send a Message</h2>
 
-  <p>
-    Share a brief overview of your business, current challenges, or the systems
-    you want to improve. We usually respond within one business day.
-  </p>
-
+  <!-- SECURE FORM (NO mailto, NO warning) -->
   <form
-    action="mailto:contact@tymzee.com"
-    method="post"
-    enctype="text/plain"
-    autocomplete="off"
-    autocapitalize="off"
-    autocorrect="off"
-    spellcheck="false"
+    action="https://formspree.io/f/YOUR_FORM_ID"
+    method="POST"
   >
-
-    <!-- Autofill blockers (Chrome fix) -->
-    <input type="text" name="fakeusernameremembered" style="display:none">
-    <input type="password" name="fakepasswordremembered" style="display:none">
 
     <div class="form-group">
       <label>Name</label>
       <input
         type="text"
-        name="client_name"
+        name="name"
         placeholder="Your full name"
-        autocomplete="off"
         required
       >
     </div>
@@ -95,9 +69,8 @@
       <label>Email</label>
       <input
         type="email"
-        name="client_email"
+        name="email"
         placeholder="you@example.com"
-        autocomplete="off"
         required
       >
     </div>
@@ -105,13 +78,15 @@
     <div class="form-group">
       <label>Message</label>
       <textarea
-        name="client_message"
+        name="message"
         rows="5"
         placeholder="Briefly describe your requirement"
-        autocomplete="off"
         required
       ></textarea>
     </div>
+
+    <!-- Disable Formspree captcha -->
+    <input type="hidden" name="_captcha" value="false">
 
     <button type="submit" class="btn-primary">
       Send Message
@@ -121,22 +96,21 @@
 </section>
 
 <section>
-  <h2>When Should You Contact Us?</h2>
+  <h2>When to Contact</h2>
   <ul>
-    <li>You want to implement or improve e-commerce systems</li>
-    <li>Your business processes are manual or inefficient</li>
-    <li>You need CCTV, surveillance, or monitoring solutions</li>
-    <li>You want reliable technical support instead of ad-hoc fixes</li>
-    <li>You need clarity before investing in technology</li>
+    <li>Website creation or redesign</li>
+    <li>Business automation or internal systems</li>
+    <li>CCTV, monitoring, or infrastructure setup</li>
+    <li>Ongoing technical support</li>
+    <li>Pre-implementation consultation</li>
   </ul>
 </section>
 
 <section>
   <h2>Working Model</h2>
   <p>
-    TymZee Technologies operates as a remote-first company, serving clients across
-    locations through structured communication, documented workflows, and
-    scheduled discussions.
+    TymZee Technologies operates remotely with structured communication and
+    documented delivery.
   </p>
 
   <p><strong>Email:</strong> contact@tymzee.com</p>
@@ -146,9 +120,7 @@
 <footer>
   <p>
     <strong>TymZee Technologies</strong> ·
-    Technology Solutions for Growing Businesses ·
-    <a href="services.html">Services</a> ·
-    <a href="contact.html">Contact</a> ·
+    Website, Software & Infrastructure Solutions ·
     <a href="privacy.html">Privacy Policy</a>
     · © 2025 TymZee Technologies
   </p>
